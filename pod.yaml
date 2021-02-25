@@ -8,5 +8,5 @@ spec:
       containers:
       - name: test-dns
         image: andreatp/test-dns:0.0.1
-        args: ['cloudflow-strimzi-kafka-bootstrap.cloudflow', '9092']
+        args: ['cloudflow-strimzi-kafka-0.cloudflow-strimzi-kafka-brokers.cloudflow.svc', '9092']
       restartPolicy: Never
