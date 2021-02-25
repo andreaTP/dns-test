@@ -1,0 +1,12 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: test-dns
+spec:
+  template:
+    spec:
+      containers:
+      - name: test-dns
+        image: andreatp/test-dns:0.0.1
+        command: ['cloudflow-strimzi-kafka-bootstrap.cloudflow', '9092']
+      restartPolicy: Never
