@@ -1,0 +1,1 @@
+docker build . -t andreatp/test-dns:0.0.1
